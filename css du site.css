@@ -1,0 +1,124 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Alfa Slab One', serif;
+}
+
+/* Bandeau du header */
+.bandeau {
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.logo {
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+/* Section d'introduction */
+main {
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-section {
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Section des collections populaires */
+.collections-section {
+    margin-bottom: 40px;
+}
+
+.collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.collection-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.collection-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.collection-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.collection-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media screen and(max-width: 600px) {
+    main {
+        width: 50px;
+    }
+    header {
+        width: 5%;
+    }
+}
+
+/* Footer */
+.footer-bandeau {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 15px 0; 
+    font-size: 1em;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.footer-bandeau a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+} 
+
+.footer-bandeau a:hover {
+    text-decoration: underline;
+}
